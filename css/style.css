@@ -1,0 +1,388 @@
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v40-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v40-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 2px solid #de2e54;
+  outline-offset: 4px;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* HEADER STYLES START */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-logo-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #222222;
+}
+
+.site-logo:hover .site-logo-text {
+  color: #de2e54;
+}
+.site-logo:active {
+  opacity: 60%;
+}
+
+.sitenav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.sitenav-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.sitenav-link:hover {
+  color: #de2e54;
+}
+
+.sitenav-link:active {
+  opacity: 60%;
+}
+
+.header-btn {
+  color: #ffffff;
+  background-color: #de2e54;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 22.5px;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.header-btn:hover {
+  color: #de2e54;
+  background-color: #fff;
+  border-color: #de2e54;
+}
+
+.header-btn:active {
+  color: #fff;
+  background-color: #de2e54;
+  border: 2px solid transparent;
+  opacity: 60%;
+}
+
+/* HEADER STYLES END */
+
+/* MAIN STYLES START */
+
+/* SECTION HERO STYLES START */
+
+.hero {
+  background-color: #0eb4c1;
+  padding-top: 29px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  width: 500px;
+}
+
+.hero-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.2px;
+  margin-bottom: 16px;
+  color: #fff;
+  width: 500px;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 36px;
+  color: #fff;
+  width: 440px;
+}
+
+.hero-btn {
+  color: #fff;
+  background-color: #de2e54;
+  border-radius: 8px;
+  border: 2px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 22.5px;
+  letter-spacing: 2px;
+  font-family: "Open Sans Condensed";
+}
+
+.hero-btn:hover {
+  opacity: 80%;
+}
+
+.hero-btn:active {
+  opacity: 60%;
+}
+
+/* SECTION HERO STYLES END */
+
+/* SECTION SERVICE STYLES START */
+
+.service {
+  background-color: #fff;
+  color: #222222;
+}
+.service-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43.2px;
+  margin-top: 120px;
+  margin-bottom: 56px;
+  color: #000;
+}
+
+.service-detailes {
+  width: 864px;
+  align-items: center;
+}
+
+.service-list {
+  display: flex;
+  align-items: start;
+  gap: 64px;
+}
+
+.service-list-image {
+  border-radius: 24px;
+  margin-bottom: 80px;
+}
+
+.service-list-title {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.service-list-description {
+  margin-top: 24px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.service-btn {
+  background-color: #de2e54;
+  font-family: "Open Sans Condensed";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  border: 2px;
+  border-color: ;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  width: 190px;
+  margin-left: 350px;
+  margin-right: 550px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  color: #ffffff;
+}
+
+/* SECTION SERVICE STYLES END */
+
+/* SECTION LAST STYLES START */
+
+.last {
+  background-color: #0eb4c1;
+  align-items: center;
+  justify-content: center;
+}
+.last-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 253px;
+}
+.last-content {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.last-list {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #fff;
+}
+
+.last-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.last-link {
+  border-radius: 8px;
+  border: 2px;
+  border-color: #fff;
+  color: #fff;
+  padding: 12px 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  background-color: #0eb4c1;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+/* SECTION LAST STYLES START */
+
+/* MAIN STYLES END */
+
+/* FOOTER STYLES START */
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #222222;
+}
+
+.footer .site-logo-text {
+  color: #fff;
+}
+
+.footer .sitenav-link {
+  color: #fff;
+}
+
+.footer .sitenav-link:hover {
+  color: #de2e54;
+}
+
+.footer .sitenav-link:active {
+  color: #fff;
+  opacity: 60%;
+}
+
+/* FOOTER STYLES END */
